@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://com5qdmsdhiti"]
+
+[ext_resource type="Texture2D" uid="uid://bwtt384gb6dqp" path="res://Jum (32x32).png" id="1_rtut2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yql05"]
+size = Vector2(87, 102)
+
+[node name="CharacterBody2D2" type="CharacterBody2D"]
+position = Vector2(17, 40)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(27, 33)
+scale = Vector2(3.125, 3.1875)
+texture = ExtResource("1_rtut2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(28.5, 37)
+shape = SubResource("RectangleShape2D_yql05")
